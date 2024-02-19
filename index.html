@@ -19,36 +19,34 @@
       <section class="section">
         <h2 class="section__title">Add Item</h2>
   
-        <form id="todo-form-new">
-          <div class="task-row-wrapper">
-            <input class="task" type="text" name="text" required />
-            <button type="submit">Add</button>
-          </div>
+        <form id="todo-form-new" class="todo-form-new">
+          <input class="form-input" type="text" name="text" required />
+          <button class="btn" type="submit">Add</button>
         </form>
       </section>
 
       <section class="section">
         <h2 class="section__title">Todo</h2>
   
-        <ul id="incompleteTasks">
-          <li>
+        <ul id="todo-list-incomplete" class="todo-list">
+          <li class="todo-item">
             <input type="checkbox">
   
-            <p class="task">Pay Bills</p>
-            <input class="task" type="text" value="Pay Bills" />
+            <p class="todo-item__text">Pay Bills</p>
+            <input class="todo-item__input form-input" type="text" />
   
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="assets/img/remove.svg" /></button>
+            <button class="btn btn_edit" type="button">Edit</button>
+            <button class="btn btn_delete" type="button">Delete</button>
           </li>
   
-          <li>
+          <li class="todo-item">
             <input type="checkbox">
   
-            <p class="task">Go Shopping</p>
-            <input class="task" type="text" value="Go Shopping" />
+            <p class="todo-item__text">Go Shopping</p>
+            <input class="todo-item__input form-input" type="text" />
   
-            <button class="edit">Save</button>
-            <button class="delete"><img src="assets/img/remove.svg" /></button>
+            <button class="btn btn_edit" type="button">Edit</button>
+            <button class="btn btn_delete" type="button">Delete</button>
           </li>
         </ul>
       </section>
@@ -56,14 +54,15 @@
       <section class="section">
         <h2 class="section__title">Completed</h2>
   
-        <ul id="completed-tasks">
-          <li>
+        <ul id="completed-tasks" class="todo-list">
+          <li class="todo-item">
             <input type="checkbox" checked />
-  
-            <p class="task">See the Doctor</p>
-            <input class="task" type="text" />
-  
-            <button class="delete"><img src="assets/img/remove.svg" /></button>
+
+            <p class="todo-item__text">See the Doctor</p>
+            <input class="todo-item__input form-input" type="text" />
+
+            <button class="btn btn_edit" type="button">Edit</button>
+            <button class="btn btn_delete" type="button">Delete</button>
           </li>
         </ul>
       </section>
